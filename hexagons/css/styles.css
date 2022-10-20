@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  height: 100%;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5 {
+    animation: float 1.5s infinite ease-in-out alternate;
+  }
+  #Polygon-2 {
+    animation-delay: .2s;
+  }
+  #Polygon-3 {
+    animation-delay: .4s; 
+  }
+  #Polygon-4 {
+    animation-delay: .6s;
+  }
+  #Polygon-5 {
+    animation-delay: .8s;
+  }
+  
+@keyframes float {
+    100% {
+      transform: translateY(20px);
+    }
+  }
