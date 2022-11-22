@@ -37,12 +37,15 @@ if(i===0){
 
 /* Toggle between showing and hiding mobile menu when the user clicks on the icon, change hamburger button to 'X' */
 var y = document.getElementById("h_nav");
+var element = document.getElementById("fullscreen");
 function mobMenu() {
   if (y.style.display === "block") {
     y.style.display = "none";
+    element.style.height = "0px";
     document.getElementById("btn1").src = ('img/menubtn.svg');
   } else {
     y.style.display = "block";
+    element.style.height = "100vh";
     document.getElementById("btn1").src = ('img/xbtn.svg');
   }
 }
@@ -57,6 +60,7 @@ if (mqdt.matches) {
   }
 if (mqmb.matches) {
     y.style.display = "none";  // window width is less than 1050px
+    element.style.height = "0px";
 }
 }
 
