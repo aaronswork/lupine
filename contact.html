@@ -17,7 +17,7 @@
 	<header id="hbar">
 		<input type="image" src="img/menubtn.svg" id="btn1" alt="Menu Button">
 		<a href="index.html"><img id="h_logo" src="img/hlogo.svg" alt="Lupine Whiskey"></a>
-			<nav>
+			<nav id="fullscreen">
 				<ul id="h_nav">
 					<li><a href="index.html">HOME</a></li>
 					<li><a href="drinks.html">THE&nbsp;DRINKS</a></li>
@@ -38,18 +38,11 @@
 				<img src="img/twigs.svg" class="twigs" alt="twigs">
 			
     <form action="#" method="post" id="theForm">
-        <fieldset><h3>PLEASE ENTER YOUR CONTACT DETAILS<br>
-AND A SHORT MESSAGE BELOW.</h3>
-			<div class="form_box"><label for="firstName">First Name</label>&nbsp;<input type="text" name="firstName" id="firstName"></div>
-			<div class="form_box"><label for="lastName">Last Name</label>&nbsp;<input type="text" name="lastName" id="lastName"></div>
-			<div class="form_box"><label for="email">Email Address</label>&nbsp;<input type="email" name="email" id="email"></div>
-			<div class="form_box"><label for="subject">Subject</label>&nbsp;<input type="text" name="subject" id="subject"></div>
-			<div class="form_box"><label for="description">Description</label>&nbsp;<input type="text" name="description" id="description"></div>
-			<div class="form_box"><input type="checkbox" name="terms" id="terms"><p>I expressly give my consent to the processing of my personal data for
-promotional activities by Lupine Whiskey Co., other companies of the
-Lupine Whiskey group and data processors for Lupine Whiskey as
-detailed in the Privacy Policy</p></div>
-			<div class="form_box"><input type="submit" value="Submit" id="submit"></div>
+	<input name="name" type="text" class="feedback-input" placeholder="Name" />   
+	<input name="email" type="text" class="feedback-input" placeholder="Email" />
+	<textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+<input type="submit" value="SUBMIT"/>
+</form>
         </fieldset>
     </form>
 </section>

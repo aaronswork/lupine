@@ -352,6 +352,54 @@ header a {
 	right: 5px;
 	z-index: 20;
 }
+#fullscreen {
+	background-color: rgb(204 204 204);
+}
+
+/* FORM STYLES */
+form { max-width:800px; margin:20px auto; }
+
+.feedback-input {
+  color:black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: rgb(120, 120, 120, 0.2);
+  border:2px solid rgb(73, 73, 73);
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid rgb(73, 73, 73); }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: Helvetica, Arial, sans-serif;
+  width: 100%;
+  background:rgb(73, 73, 73);
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:rgb(37, 48, 85); }
 
 /* RESPONSIVE ELEMENTS */
 
